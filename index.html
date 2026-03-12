@@ -3,264 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grow Up With Rafiq | YouTube SEO Authority</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>MD RAFIQUL ISLAM | YouTube SEO Authority for Realtors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Plus+Jakarta+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        body { background-color: #000; color: #fff; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        h1, h2, h3 { font-family: 'Montserrat', sans-serif; text-transform: uppercase; letter-spacing: -0.05em; line-height: 0.9; }
-        .red-accent { color: #FF0000; }
-        .gold-glow { color: #D4AF37; text-decoration: underline; transition: 0.3s; }
-        .gold-glow:hover { color: #fff; }
-        .premium-border { border: 1px solid rgba(255, 255, 255, 0.1); }
-        .section-padding { padding: 120px 20px; }
-        /* Form Styling */
-        input, select { background: transparent !important; border-bottom: 2px solid #333 !important; border-top: none !important; border-left: none !important; border-right: none !important; border-radius: 0 !important; color: white !important; font-weight: bold; }
-        input:focus { border-bottom-color: #FF0000 !important; outline: none; }
-        .error-border { border-bottom-color: #FF0000 !important; }
+        :root {
+            --red: #B91C1C; /* Blood Red */
+            --bg: #000000;
+            --zinc: #09090b;
+        }
+
+        /* Essential Reset - NO SHADOWS ALLOWED */
+        * { margin: 0; padding: 0; box-sizing: border-box; text-shadow: none !important; box-shadow: none !important; }
+        body { background: var(--bg); color: #fff; font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.2; overflow-x: hidden; }
+
+        /* 1. SCARCITY BAR */
+        .scarcity-top { background: #fff; color: #000; padding: 12px; text-align: center; font-size: 11px; font-weight: 900; letter-spacing: 5px; text-transform: uppercase; position: sticky; top: 0; z-index: 1000; }
+
+        .container { max-width: 1300px; margin: 0 auto; padding: 0 40px; }
+        section { padding: 140px 0; border-bottom: 1px solid #18181b; }
+
+        /* 2. HERO - MASSIVE TYPOGRAPHY */
+        h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(3rem, 11vw, 9rem); font-weight: 900; letter-spacing: -6px; text-transform: uppercase; line-height: 0.85; margin-bottom: 50px; }
+        .hero p { font-size: 22px; color: #71717a; max-width: 800px; margin-bottom: 60px; font-weight: 400; }
+        
+        .btn-elite { background: #fff; color: #000; padding: 25px 60px; font-weight: 900; text-transform: uppercase; letter-spacing: 3px; text-decoration: none; display: inline-block; font-size: 14px; transition: 0.3s; cursor: pointer; border: none; }
+        .btn-elite:hover { background: var(--red); color: #fff; }
+
+        /* 3. LOSS ATTACK (PSYCHOLOGY) */
+        .loss-flex { display: flex; align-items: center; gap: 80px; flex-wrap: wrap; }
+        .loss-text { flex: 1.2; }
+        .loss-text h2 { font-size: 65px; font-weight: 800; margin-bottom: 30px; letter-spacing: -3px; }
+        .loss-box { background: var(--red); padding: 90px; text-align: center; flex: 0.8; }
+        .loss-box h3 { font-size: 100px; font-weight: 900; color: #000; letter-spacing: -5px; }
+
+        /* 4. MARKET GAP (US VS THEM) */
+        .comp-table { display: grid; grid-template-columns: 1fr 1fr; background: #27272a; gap: 1px; border: 1px solid #27272a; margin-top: 80px; }
+        .comp-side { background: #000; padding: 80px; }
+        .comp-side h4 { font-size: 12px; letter-spacing: 5px; color: #3f3f46; margin-bottom: 45px; text-transform: uppercase; }
+        .comp-side li { list-style: none; margin-bottom: 25px; font-weight: 700; text-transform: uppercase; display: flex; align-items: center; font-size: 14px; color: #52525b; }
+        .comp-side.premium li { color: #fff; }
+        .comp-side i { margin-right: 20px; font-size: 18px; }
+
+        /* 5. CASE STUDY HIGHLIGHT (DRIVE LINK) */
+        .proof-highlight { background: var(--zinc); border: 2px solid #D4AF37; padding: 100px; text-align: center; }
+        .proof-link { 
+            background: linear-gradient(90deg, #D4AF37, #FBF5B7, #AA771C); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            font-size: 35px; font-weight: 900; text-decoration: underline; text-transform: uppercase; transition: 0.3s;
+        }
+        .proof-link:hover { filter: brightness(1.2); }
+
+        /* 6. PRICING (DECOY EFFECT) */
+        .price-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 100px; }
+        .p-card { background: #050505; border: 1px solid #18181b; padding: 70px 40px; text-align: center; }
+        .p-card.featured { border: 2px solid var(--red); transform: scale(1.05); position: relative; background: #000; }
+        .badge { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--red); color: #fff; font-size: 10px; padding: 5px 15px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; }
+        .p-card .amount { font-size: 80px; font-weight: 900; margin: 30px 0; letter-spacing: -5px; }
+
+        /* 7. AUTHOR (ORIGINAL PHOTO) */
+        .author-box { display: flex; align-items: center; gap: 80px; flex-wrap: wrap; }
+        .author-img { flex: 0.8; }
+        .author-img img { width: 100%; display: block; filter: contrast(1.1); }
+        .author-info { flex: 1.2; }
+        .author-info h2 { font-size: 60px; font-weight: 800; margin-bottom: 40px; }
+        .author-info p { font-size: 28px; font-weight: 300; color: #a1a1aa; line-height: 1.4; font-style: italic; }
+
+        /* 8. AUDIT FORM MACHINE */
+        .form-container { max-width: 800px; margin: 0 auto; background: var(--zinc); padding: 100px; border: 1px solid #18181b; }
+        .input-group { margin-bottom: 50px; position: relative; }
+        label { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 3px; color: #52525b; margin-bottom: 15px; display: block; }
+        input, select { width: 100%; background: transparent; border: none; border-bottom: 2px solid #27272a; padding: 15px 0; color: #fff; font-size: 18px; outline: none; }
+        input:focus { border-bottom-color: #fff; }
+        .star { color: var(--red); position: absolute; right: 0; top: 0; font-weight: 800; }
+
+        /* 9. FOOTER SEO */
+        footer { padding: 120px 0; text-align: center; border-top: 1px solid #18181b; }
+        .seo-tags { font-size: 10px; color: #111; text-transform: uppercase; letter-spacing: 3px; line-height: 2.5; max-width: 1000px; margin: 0 auto 60px; font-weight: 800; }
+
+        @media (max-width: 1000px) {
+            .loss-flex, .comp-table, .price-grid, .author-box { grid-template-columns: 1fr; flex-direction: column; }
+            .p-card.featured { transform: scale(1); }
+            h1 { font-size: 4rem; }
+            .form-container { padding: 40px 20px; }
+        }
     </style>
 </head>
 <body>
 
-    <div class="bg-white text-black text-center py-2 text-[10px] md:text-xs font-black tracking-widest uppercase sticky top-0 z-[100]">
-        ONLY 1 PARTNERSHIP SLOT REMAINING FOR MARCH 2026 — ACTION REQUIRED
-    </div>
+    <div class="scarcity-top">1 PARTNERSHIP SLOT REMAINING FOR MARCH 2026. DO NOT DELAY. [cite: 36]</div>
 
-    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 border-b border-zinc-900">
-        <h1 class="text-6xl md:text-[140px] mb-8 uppercase">
-            STOP BEING <br> <span class="red-accent italic">INVISIBLE.</span>
-        </h1>
-        <p class="text-zinc-500 text-xl md:text-2xl max-w-3xl mx-auto mb-12 font-medium">
-            While you're waiting for referrals, your competitors are using YouTube SEO to automate their lead flow. We rank you #1 or we don't work together.
-        </p>
-        <a href="#audit" class="bg-white text-black px-12 py-6 font-black text-sm uppercase tracking-widest hover:bg-red-600 hover:text-white transition-all">
-            Grab Your Free Video Audit Now
-        </a>
+    <section class="container">
+        <h1>STOP BEING <br> <span style="color: var(--red);">INVISIBLE.</span> [cite: 3]</h1>
+        <p>Your competitors are securing listings via YouTube while you wait for referrals. We rank your brand #1 or we don't work together. [cite: 4]</p>
+        <a href="#audit" class="btn-elite">Start My Free Audit [cite: 5]</a>
     </section>
 
-    <section class="section-padding bg-zinc-950 border-b border-zinc-900">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
-            <div>
-                <h2 class="text-4xl md:text-6xl font-black mb-8 italic">The $50,000 Silence.</h2>
-                <p class="text-zinc-400 text-xl mb-8 leading-relaxed">
-                    In the US real estate market, attention is currency. Every homeowner that doesn't see your face on YouTube is a commission check written to your competitor.
-                </p>
-                <div class="p-10 premium-border bg-black">
-                    <p class="text-xs uppercase tracking-widest text-zinc-600 mb-2 font-bold">Estimated Annual Revenue Loss</p>
-                    <p class="text-6xl font-black red-accent">$50,000.00+</p>
-                </div>
+    <section class="container">
+        <div class="loss-flex">
+            <div class="loss-text">
+                <h2>The <span style="color: var(--red); font-weight: 900;">$50,000</span> Annual Gap. [cite: 6]</h2>
+                <p>In the US market, attention is equity. Every seller who doesn't find you on YouTube is a commission check written to your competition. [cite: 9]</p>
             </div>
-            <div class="text-3xl md:text-5xl font-light italic text-zinc-300 border-l-8 border-red-600 pl-10">
-                "YouTube isn't a platform. It's a 24/7 sales machine that builds authority while you sleep."
+            <div class="loss-box">
+                <p style="font-size: 12px; font-weight: 900; color: #000; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 3px;">COMMISSION LOSS / YEAR</p>
+                <h3>$50K+ [cite: 8]</h3>
             </div>
         </div>
     </section>
 
-    <section class="section-padding border-b border-zinc-900">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-4xl md:text-6xl font-black mb-16">The Proof Is Absolute</h2>
-            <div class="grid md:grid-cols-2 gap-10 mb-20">
-                <div class="premium-border p-6 bg-zinc-900">
-                    <p class="text-green-500 font-bold mb-4 uppercase text-xs">Real 100/100 SEO Score</p>
-                    <img src="https://raw.githubusercontent.com/wakeupwithrafiq/US-REAL-ESTATE-LEADS/main/Screenshot_1.jpg" alt="SEO Proof" class="w-full grayscale hover:grayscale-0 transition duration-500">
-                </div>
-                <div class="premium-border p-6 bg-zinc-900">
-                    <p class="text-green-500 font-bold mb-4 uppercase text-xs">Real 222K+ Views Growth</p>
-                    <img src="https://raw.githubusercontent.com/wakeupwithrafiq/US-REAL-ESTATE-LEADS/main/Screenshot_3.png" alt="Views Proof" class="w-full grayscale hover:grayscale-0 transition duration-500">
-                </div>
+    <section class="container">
+        <h2 style="text-align: center; margin-bottom: 60px; font-size: 40px; font-weight: 800;">THE MARKET GAP. [cite: 10]</h2>
+        <div class="comp-table">
+            <div class="comp-side">
+                <h4>Traditional Agencies [cite: 11]</h4>
+                <ul>
+                    <li><i class="fa fa-times"></i> RANDOM KEYWORD GUESSING [cite: 13]</li>
+                    <li><i class="fa fa-times"></i> VANITY METRICS & FAKE VIEWS [cite: 13]</li>
+                    <li><i class="fa fa-times"></i> NO US REAL ESTATE CONTEXT [cite: 13]</li>
+                    <li><i class="fa fa-times"></i> HIGH FEES, NO ATTRIBUTION [cite: 13]</li>
+                </ul>
             </div>
-            <a href="https://drive.google.com/drive/mobile/folders/1v-sZIwSkjEdyqlM68wuS50igBtDqoAJ9" target="_blank" class="gold-glow text-2xl font-black uppercase tracking-widest">
-                View All Case Study Receipts →
-            </a>
-        </div>
-    </section>
-
-    <section class="section-padding bg-zinc-950 border-b border-zinc-900">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-center text-4xl font-black mb-20">The Distinction</h2>
-            <div class="grid md:grid-cols-2 gap-px bg-zinc-800 border border-zinc-800">
-                <div class="bg-black p-12">
-                    <h4 class="text-zinc-600 uppercase font-black mb-8 tracking-widest">Traditional Agencies</h4>
-                    <ul class="space-y-6 text-zinc-600 font-bold text-xs uppercase">
-                        <li><i class="fas fa-times mr-4"></i> Random Keywords</li>
-                        <li><i class="fas fa-times mr-4"></i> Vanity Metrics (Fake Views)</li>
-                        <li><i class="fas fa-times mr-4"></i> No Real Estate Market Context</li>
-                        <li><i class="fas fa-times mr-4"></i> Black-Hat Risks</li>
-                        <li><i class="fas fa-times mr-4"></i> High Fees, No Attribution</li>
-                    </ul>
-                </div>
-                <div class="bg-black p-12 border-l border-zinc-800">
-                    <h4 class="red-accent uppercase font-black mb-8 tracking-widest">Grow Up With Rafiq</h4>
-                    <ul class="space-y-6 text-white font-bold text-xs uppercase">
-                        <li><i class="fas fa-check red-accent mr-4"></i> Hyper-Local KGR Research</li>
-                        <li><i class="fas fa-check red-accent mr-4"></i> High-Intent Lead Optimization</li>
-                        <li><i class="fas fa-check red-accent mr-4"></i> Realtor-Specific Lead Gen</li>
-                        <li><i class="fas fa-check red-accent mr-4"></i> Performance-Based Rankings</li>
-                        <li><i class="fas fa-check red-accent mr-4"></i> Sustainable Revenue Growth</li>
-                    </ul>
-                </div>
+            <div class="comp-side premium">
+                <h4 style="color: var(--red);">GROW UP WITH RAFIQ [cite: 12]</h4>
+                <ul>
+                    <li><i class="fa fa-check" style="color: var(--red);"></i> HYPER-LOCAL KGR RESEARCH [cite: 14]</li>
+                    <li><i class="fa fa-check" style="color: var(--red);"></i> HIGH-INTENT LEAD OPTIMIZATION [cite: 15]</li>
+                    <li><i class="fa fa-check" style="color: var(--red);"></i> EXCLUSIVE REALTOR LEAD GEN [cite: 16]</li>
+                    <li><i class="fa fa-check" style="color: var(--red);"></i> PERFORMANCE-BASED ROI [cite: 16]</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section class="section-padding border-b border-zinc-900">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-4xl md:text-6xl font-black mb-4 italic">Investment Strategy</h2>
-            <p class="text-zinc-600 mb-20 italic font-bold">Less than the cost of a daily coffee to secure your legacy.</p>
-            <div class="grid md:grid-cols-3 gap-8 items-center">
-                <div class="premium-border p-10 opacity-30 scale-90">
-                    <p class="text-xs uppercase mb-4 tracking-widest">Starter (7 Days)</p>
-                    <p class="text-5xl font-black mb-8">$120</p>
-                    <p class="text-[10px] text-zinc-700 uppercase font-black">Basic SEO optimization</p>
-                </div>
-                <div class="premium-border p-12 relative bg-black scale-105 shadow-2xl border-red-900 ring-2 ring-red-600">
-                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-white text-black text-[10px] px-6 py-1 font-black uppercase tracking-widest">Most Selected</div>
-                    <p class="text-xs uppercase mb-4 tracking-widest red-accent">Authority (30 Days)</p>
-                    <p class="text-7xl font-black mb-10 tracking-tighter">$180</p>
-                    <ul class="text-left text-xs space-y-5 mb-10 font-bold uppercase text-zinc-400">
-                        <li><i class="fas fa-check text-white mr-2"></i> Full Channel Domination</li>
-                        <li><i class="fas fa-check text-white mr-2"></i> US Local Real Estate Keywords</li>
-                        <li><i class="fas fa-check text-white mr-2"></i> Strategic Revenue Audit</li>
-                        <li><i class="fas fa-check text-white mr-2"></i> 24/7 Support Access</li>
-                    </ul>
-                    <a href="#audit" class="bg-white text-black block w-full py-5 font-black text-xs uppercase tracking-widest hover:bg-red-600 hover:text-white transition-all">Claim Slot</a>
-                </div>
-                <div class="premium-border p-10 opacity-30 scale-90">
-                    <p class="text-xs uppercase mb-4 tracking-widest">Empire (90 Days)</p>
-                    <p class="text-5xl font-black mb-8">$550</p>
-                    <p class="text-[10px] text-zinc-700 uppercase font-black">Full management & Ads</p>
-                </div>
+    <section class="container">
+        <div class="proof-highlight">
+            <h2 style="margin-bottom: 50px;">Undeniable Market Authority. [cite: 17]</h2>
+            <a href="https://drive.google.com/drive/mobile/folders/1v-sZIwSkjEdyqlM68wuS50igBtDqoAJ9" target="_blank" class="proof-link">View All Case Study Receipts → [cite: 19]</a>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 style="text-align: center; margin-bottom: 80px; font-size: 50px; font-weight: 800;">INVESTMENT [cite: 20]</h2>
+        <div class="price-grid">
+            <div class="p-card" style="opacity: 0.3;">
+                <p style="font-size: 10px; font-weight: 800;">STARTER (7 DAYS)</p>
+                <div class="amount">$120 [cite: 23]</div>
+            </div>
+            <div class="p-card featured">
+                <div class="badge">Most Selected [cite: 22]</div>
+                <p style="font-size: 10px; font-weight: 800; color: var(--red);">AUTHORITY (30 DAYS)</p>
+                <div class="amount" style="color: var(--red);">$180 [cite: 25]</div>
+                <ul style="text-align: left; list-style: none; font-size: 13px; font-weight: 700; color: #52525b; line-height: 2; margin-bottom: 40px;">
+                    <li>✓ FULL CHANNEL DOMINATION [cite: 27]</li>
+                    <li>✓ LOCAL REAL ESTATE SEO [cite: 28]</li>
+                    <li>✓ HIGH INTENT REALTOR KEYWORDS [cite: 29]</li>
+                    <li>✓ STRATEGIC REVENUE AUDIT [cite: 30]</li>
+                </ul>
+                <a href="#audit" class="btn-elite" style="width: 100%; text-align: center; padding: 20px 0;">Claim Slot [cite: 31]</a>
+            </div>
+            <div class="p-card" style="opacity: 0.3;">
+                <p style="font-size: 10px; font-weight: 800;">EMPIRE (90 DAYS)</p>
+                <div class="amount">$550 [cite: 26]</div>
             </div>
         </div>
     </section>
 
-    <section class="section-padding bg-zinc-950 border-b border-zinc-900">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-20 items-center">
-            <div class="md:w-1/3">
-                <img src="https://raw.githubusercontent.com/wakeupwithrafiq/US-REAL-ESTATE-LEADS/main/Md%20Rafiqul%20Islam.jpg" alt="Rafiq" class="w-full border border-zinc-800 shadow-2xl">
+    <section class="container">
+        <div class="author-box">
+            <div class="author-img">
+                <img src="https://raw.githubusercontent.com/wakeupwithrafiq/US-REAL-ESTATE-LEADS/main/Md%20Rafiqul%20Islam.jpg" alt="Rafiq">
             </div>
-            <div class="md:w-2/3">
-                <h2 class="text-5xl font-black mb-10 italic">Md Rafiqul Islam.</h2>
-                <p class="text-3xl text-zinc-400 font-light italic mb-10 leading-tight">
-                    "I don't play for views. I play for revenue. I take US Realtors who are tired of being 'hidden gems' and turn them into the only logical choice in their city."
-                </p>
-                <div class="h-[1px] w-20 bg-red-600 mb-4"></div>
-                <p class="text-zinc-600 text-xs font-black uppercase tracking-[0.4em]">Growth Architect & Founder</p>
+            <div class="author-info">
+                <h2>Md Rafiqul Islam. [cite: 32]</h2>
+                <p>"I don't play for views. I play for revenue. I take US Realtors who are tired of being 'hidden gems' and turn them into the only logical choice in their city." [cite: 33]</p>
             </div>
         </div>
     </section>
 
-    <section id="audit" class="section-padding border-b border-zinc-900">
-        <div class="max-w-2xl mx-auto premium-border p-16 bg-black">
-            <h2 class="text-3xl font-black mb-4 text-center uppercase tracking-widest">Free Audit Application</h2>
-            <p class="text-center text-zinc-600 mb-12 text-xs uppercase tracking-widest">Business Emails Only — Required for Eligibility</p>
-            
-            <form id="auditForm" class="space-y-10">
-                <div class="relative">
-                    <input type="text" name="name" id="name" placeholder="FULL NAME" required class="w-full p-4 uppercase text-xs tracking-widest">
-                    <span id="name-star" class="absolute right-0 top-4 text-red-600 hidden">*</span>
+    <section id="audit" class="container">
+        <div class="form-container">
+            <h2 style="text-align: center; margin-bottom: 60px; font-size: 30px; font-weight: 800;">FREE AUDIT APPLICATION [cite: 34]</h2>
+            <form id="auditForm">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="ENTER NAME" required>
+                    <span class="star">*</span>
                 </div>
-                <div class="relative">
-                    <input type="email" id="email" name="email" placeholder="BUSINESS EMAIL" required class="w-full p-4 uppercase text-xs tracking-widest">
-                    <span id="email-star" class="absolute right-0 top-4 text-red-600 hidden">*</span>
+                <div class="input-group">
+                    <label>Business Email</label>
+                    <input type="email" name="email" id="email" placeholder="ENTER BUSINESS EMAIL" required>
+                    <span class="star">*</span>
                 </div>
-                <div>
-                    <select name="profession" id="profession" required class="w-full p-4 text-xs tracking-widest uppercase">
+                <div class="input-group">
+                    <label>Profession</label>
+                    <select name="profession" id="profession" required>
                         <option value="">SELECT PROFESSION</option>
                         <option value="Agent">REAL ESTATE AGENT</option>
                         <option value="Broker">BROKER</option>
                         <option value="Investor">INVESTOR</option>
                         <option value="Others">OTHERS</option>
                     </select>
+                    <span class="star">*</span>
                 </div>
-                <div>
-                    <select name="income" id="income" required class="w-full p-4 text-xs tracking-widest uppercase">
-                        <option value="">MONTHLY EARNINGS</option>
+                <div class="input-group">
+                    <label>Monthly Earnings</label>
+                    <select name="income" id="income" required>
+                        <option value="">SELECT EARNINGS</option>
                         <option value="0-5k">$0 - $5K</option>
                         <option value="5-15k">$5K - $15K</option>
                         <option value="15k+">$15K+</option>
                         <option value="Others">OTHERS</option>
                     </select>
+                    <span class="star">*</span>
                 </div>
-                <button type="submit" id="submitBtn" class="bg-white text-black w-full py-6 font-black text-xs uppercase tracking-[0.4em] hover:bg-red-600 hover:text-white transition-all">
-                    Submit Application
-                </button>
+                <button type="submit" id="submitBtn" class="btn-elite" style="width: 100%; border: none; cursor: pointer;">Submit For Approval [cite: 35]</button>
             </form>
-            <div id="timer" class="text-center mt-12 text-[10px] text-zinc-700 tracking-[0.5em] font-black uppercase">OFFER EXPIRES IN: 23:59:59</div>
+            <p id="timer" style="text-align: center; margin-top: 40px; letter-spacing: 5px; font-size: 11px; color: var(--red); font-weight: 800;">OFFER EXPIRES IN: 23:59:59 [cite: 36]</p>
         </div>
     </section>
 
-    <footer class="py-32 px-6 text-center">
-        <div class="text-xl font-black italic mb-10 tracking-[0.3em] uppercase red-accent underline">GROW UP WITH RAFIQ</div>
-        <p class="text-zinc-800 text-[10px] tracking-widest uppercase mb-12 max-w-4xl mx-auto leading-loose font-bold">
-            YouTube SEO for Realtors | Real Estate YouTube Expert | Rank Property Listing Videos | Realtor Video Marketing Strategy | Local Real Estate SEO | YouTube Lead Generation for Agents | High Intent Realtor Keywords | Viral Real Estate Content SEO | Property Video Ranking Service | Real Estate Authority Builder
-        </p>
-        <p class="text-zinc-700 text-[10px] tracking-[0.5em] uppercase">contact@mindhacking.site</p>
-        <p class="mt-8 text-[8px] text-zinc-900 uppercase">© 2026 MD RAFIQUL ISLAM. ALL RIGHTS RESERVED. EXCLUSIVELY FOR US MARKET.</p>
+    <footer>
+        <div class="container">
+            <p class="seo-tags">
+                YouTube SEO for Realtors | Real Estate YouTube Expert | Rank Property Listing Videos | Realtor Video Marketing Strategy | Local Real Estate SEO | YouTube Lead Generation for Agents | High Intent Realtor Keywords | Viral Real Estate Content SEO | Property Video Ranking Service | Real Estate Authority Builder
+            </p>
+            <p style="color: #444; font-size: 11px; font-weight: 900; letter-spacing: 3px;">CONTACT@MINDHACKING.SITE</p>
+        </div>
     </footer>
 
-    <div id="successPopup" class="fixed inset-0 bg-black/95 z-[200] flex items-center justify-center hidden">
-        <div class="premium-border p-16 bg-black text-center max-w-lg mx-auto">
-            <i class="fas fa-check-circle text-6xl red-accent mb-6"></i>
-            <h2 class="text-3xl font-black mb-4 uppercase tracking-widest">Application Success</h2>
-            <p class="text-zinc-400 text-sm mb-8 leading-relaxed uppercase tracking-widest">Congratulations! Our team will analyze your channel. Your Audit Report will be in your inbox within 24 hours.</p>
-            <button onclick="closePopup()" class="bg-white text-black px-12 py-4 font-black text-xs uppercase tracking-widest">Dismiss</button>
-        </div>
-    </div>
-
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzG3tpCobPrk7Q4BxBOqsgmkU45TrHhbQoe-UBpK1u75BncwQ0UYO_HR9FiyJLFX-74/exec';
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzG3tpCobPrk7Q4BxBOqsgmkU45TrHhbQoe-UBpK1u75BncwQ0UYO_HR9FiyJLFX-74/exec'; [cite: 24]
         const form = document.getElementById('auditForm');
-        const submitBtn = document.getElementById('submitBtn');
-        const successPopup = document.getElementById('successPopup');
+        const btn = document.getElementById('submitBtn');
 
         form.addEventListener('submit', e => {
             e.preventDefault();
-            
-            // Basic Validation
-            let isValid = true;
-            const fields = ['name', 'email', 'profession', 'income'];
-            fields.forEach(f => {
-                const el = document.getElementById(f);
-                if(!el.value) { el.classList.add('error-border'); isValid = false; }
-                else { el.classList.remove('error-border'); }
-            });
-
-            if(!isValid) return;
-
             const email = document.getElementById('email').value.toLowerCase();
-            const tempDomains = ['tempmail.com', '10minutemail.com', 'guerrillamail.com'];
-            if(tempDomains.some(d => email.includes(d))) {
+            const tempDomains = ['tempmail', '10minutemail', 'guerrillamail'];
+            
+            if (tempDomains.some(d => email.includes(d))) {
                 alert('BUSINESS EMAILS ONLY. ACCESS DENIED.');
                 return;
             }
 
-            submitBtn.innerText = "PROCESSING...";
-            submitBtn.disabled = true;
+            btn.innerText = "PROCESSING..."; btn.disabled = true;
 
             fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => {
-                    successPopup.classList.remove('hidden');
-                    form.reset();
-                    submitBtn.innerText = "SUBMIT APPLICATION";
-                    submitBtn.disabled = false;
+                .then(res => {
+                    alert('APPLICATION SUCCESSFUL. WE WILL CONTACT YOU WITHIN 24 HOURS.');
+                    form.reset(); btn.innerText = "Submit For Approval"; btn.disabled = false;
                 })
-                .catch(error => {
-                    alert('CONNECTION ERROR.');
-                    submitBtn.disabled = false;
-                });
+                .catch(err => { alert('CONNECTION ERROR.'); btn.disabled = false; });
         });
 
-        function closePopup() { successPopup.classList.add('hidden'); }
-
-        // 24H TIMER
         setInterval(() => {
-            const display = document.querySelector('#timer');
             const now = new Date();
             const h = 23 - now.getHours(); const m = 59 - now.getMinutes(); const s = 59 - now.getSeconds();
-            display.textContent = `OFFER EXPIRES IN: ${h<10?'0':''}${h}:${m<10?'0':''}${m}:${s<10?'0':''}${s}`;
+            document.getElementById('timer').innerText = `OFFER EXPIRES IN: ${h<10?'0':''}${h}:${m<10?'0':''}${m}:${s<10?'0':''}${s}`;
         }, 1000);
     </script>
 </body>
