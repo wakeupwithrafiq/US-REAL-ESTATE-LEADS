@@ -18,22 +18,22 @@
         .urgency-bar { background: var(--white); color: #000; padding: 12px; text-align: center; font-size: 11px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; position: sticky; top: 0; z-index: 1000; }
 
         .wrapper { width: 90%; max-width: 1200px; margin: 0 auto; }
-        section { width: 100%; padding: 100px 0; border-bottom: 1px solid #111; }
+        section { width: 100%; padding: 80px 0; border-bottom: 1px solid #111; }
 
         /* Balanced Typography */
         h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(2.5rem, 8vw, 6rem); font-weight: 800; text-transform: uppercase; line-height: 1.1; margin-bottom: 30px; }
         h2 { font-family: 'Montserrat', sans-serif; font-size: clamp(1.8rem, 5vw, 3.5rem); font-weight: 800; text-transform: uppercase; margin-bottom: 25px; }
         p { font-size: 1.1rem; color: #888; max-width: 750px; margin-bottom: 40px; }
 
-        .btn-cta { background: var(--white); color: #000; padding: 20px 50px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; text-decoration: none; display: inline-block; font-size: 14px; transition: 0.3s; cursor: pointer; }
+        .btn-cta { background: var(--white); color: #000; padding: 18px 45px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; text-decoration: none; display: inline-block; font-size: 14px; transition: 0.3s; cursor: pointer; }
         .btn-cta:hover { background: var(--red); color: var(--white); }
 
-        /* Section 2: Loss Grid */
+        /* Loss Grid */
         .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 60px; align-items: center; }
-        .red-box { background: var(--red); padding: 60px 40px; text-align: center; color: #000; }
+        .red-box { background: var(--red); padding: 50px 30px; text-align: center; color: #000; }
         .red-box h3 { font-size: 4.5rem; font-weight: 800; line-height: 1; }
 
-        /* Section 3: Us vs Them (Errors Fixed) */
+        /* Us vs Them (Errors Fixed) */
         .comparison-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2px; background: #222; margin-top: 40px; border: 1px solid #222; }
         .comp-card { background: #000; padding: 50px 30px; }
         .comp-card h4 { font-size: 11px; letter-spacing: 3px; color: #555; margin-bottom: 30px; text-transform: uppercase; }
@@ -41,31 +41,26 @@
         .comp-card.featured li { color: #fff; }
         .comp-card i { margin-right: 15px; color: var(--red); }
 
-        /* Section 4: Gold Authority */
-        .gold-border { border: 2px solid #D4AF37; padding: 80px 40px; text-align: center; }
+        /* Gold Authority */
+        .gold-border { border: 2px solid #D4AF37; padding: 70px 40px; text-align: center; }
         .gold-link { color: #D4AF37; font-size: 1.5rem; font-weight: 800; text-decoration: underline; text-transform: uppercase; transition: 0.3s; }
 
-        /* Section 5: Pricing (Decoy Effect) */
+        /* Pricing */
         .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 60px; }
         .price-card { background: #050505; border: 1px solid #111; padding: 50px 20px; text-align: center; }
         .price-card.highlight { border: 2px solid var(--red); transform: scale(1.05); position: relative; }
         .price-val { font-size: 4rem; font-weight: 800; margin: 20px 0; }
 
-        /* Section 6: Author */
+        /* Author */
         .author-flex { display: flex; flex-wrap: wrap; gap: 50px; align-items: center; }
         .author-flex img { width: 100%; max-width: 400px; border: 1px solid #222; }
         .author-text p { font-size: 1.6rem; font-style: italic; color: #666; line-height: 1.3; }
 
-        /* Section 7: Form (Clean) */
+        /* Form */
         .form-box { max-width: 700px; margin: 0 auto; background: #0A0A0A; padding: 60px 40px; border: 1px solid #1A1A1A; }
         .form-field { margin-bottom: 35px; }
         label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #444; margin-bottom: 12px; display: block; }
         input, select { width: 100%; background: transparent; border: none; border-bottom: 2px solid #222; padding: 12px 0; color: #fff; font-size: 16px; outline: none; font-weight: 600; text-transform: uppercase; }
-        input:focus { border-bottom-color: #fff; }
-
-        /* Footer */
-        footer { padding: 80px 0; text-align: center; border-top: 1px solid #111; }
-        .seo-text { font-size: 9px; color: #111; text-transform: uppercase; letter-spacing: 2px; line-height: 2.2; max-width: 800px; margin: 0 auto 40px; font-weight: 700; }
 
         @media (max-width: 768px) {
             h1 { font-size: 3rem; }
@@ -75,13 +70,13 @@
 </head>
 <body>
 
-    <div class="urgency-bar">ONLY 1 PARTNERSHIP SLOT REMAINING FOR MARCH 2026. [cite: 42]</div>
+    <div class="urgency-bar">ONLY 1 PARTNERSHIP SLOT REMAINING FOR MARCH 2026.</div>
 
     <section>
         <div class="wrapper">
-            <h1>STOP BEING <br> <span style="color: var(--red);">INVISIBLE. [cite: 43]</span></h1>
-            <p>Your competitors are securing high-ticket listings via YouTube while you wait for referrals[cite: 44]. We rank your brand #1 or we don't work together[cite: 44].</p>
-            <a href="#audit" class="btn-cta">Start My Free Audit [cite: 45]</a>
+            <h1>STOP BEING <br> <span style="color: var(--red);">INVISIBLE.</span></h1>
+            <p>Your competitors are securing high-ticket listings via YouTube while you wait for referrals[cite: 31, 43]. We rank your brand #1 or we don't work together[cite: 4, 44].</p>
+            <a href="#audit" class="btn-cta">Start My Free Audit</a>
         </div>
     </section>
 
@@ -89,12 +84,12 @@
         <div class="wrapper">
             <div class="grid-2">
                 <div>
-                    <h2>The <span style="color: var(--red);">$50,000</span> Annual Gap[cite: 46, 47].</h2>
-                    <p>Every homeowner who doesn't find you on YouTube is a commission check written to your competition[cite: 48]. Attention is equity.</p>
+                    <h2>The <span style="color: var(--red);">$50,000</span> Annual Gap.</h2>
+                    <p>Every homeowner who doesn't find you on YouTube is a commission check written to your competition[cite: 7, 48]. Attention is equity[cite: 7, 48].</p>
                 </div>
                 <div class="red-box">
                     <p style="font-size: 11px; font-weight: 800; margin-bottom: 10px;">REVENUE LOSS / YR</p>
-                    <h3>$50K+ [cite: 49]</h3>
+                    <h3>$50K+</h3>
                 </div>
             </div>
         </div>
@@ -102,22 +97,22 @@
 
     <section>
         <div class="wrapper" style="text-align: center;">
-            <h2>THE MARKET GAP[cite: 50].</h2>
+            <h2>THE MARKET GAP.</h2>
             <div class="comparison-grid">
                 <div class="comp-card">
                     <h4>Traditional Agencies</h4>
                     <ul>
-                        <li><i class="fa fa-times"></i> Random Keywords [cite: 52]</li>
-                        <li><i class="fa fa-times"></i> Fake Metrics [cite: 53]</li>
-                        <li><i class="fa fa-times"></i> No Real Estate Focus [cite: 54]</li>
+                        <li><i class="fa fa-times"></i> Random Keywords [cite: 12, 52]</li>
+                        <li><i class="fa fa-times"></i> Fake Metrics [cite: 12, 53]</li>
+                        <li><i class="fa fa-times"></i> No Real Estate Focus [cite: 13, 54]</li>
                     </ul>
                 </div>
                 <div class="comp-card featured">
                     <h4 style="color: var(--red);">Grow Up With Rafiq</h4>
                     <ul>
-                        <li><i class="fa fa-check"></i> Hyper-Local KGR Research [cite: 56]</li>
-                        <li><i class="fa fa-check"></i> High-Intent Lead Flow [cite: 57]</li>
-                        <li><i class="fa fa-check"></i> Exclusive Realtor SEO [cite: 58]</li>
+                        <li><i class="fa fa-check"></i> Hyper-Local KGR Research [cite: 15, 56]</li>
+                        <li><i class="fa fa-check"></i> High-Intent Lead Flow [cite: 16, 57]</li>
+                        <li><i class="fa fa-check"></i> Exclusive Realtor SEO [cite: 17, 58]</li>
                     </ul>
                 </div>
             </div>
@@ -127,31 +122,30 @@
     <section>
         <div class="wrapper">
             <div class="gold-border">
-                <h2>Undeniable Authority[cite: 59].</h2>
-                <p>We rank videos with 100/100 SEO scores. We don't sell hope, we sell data[cite: 61, 62].</p>
-                <a href="https://drive.google.com/drive/mobile/folders/1v-sZIwSkjEdyqlM68wuS50igBtDqoAJ9" target="_blank" class="gold-link">View All Case Study Receipts → [cite: 63]</a>
+                <h2>Undeniable Authority.</h2>
+                <p>We rank videos with 100/100 SEO scores[cite: 19, 61]. We don't sell hope, we sell data[cite: 19, 62].</p>
+                <a href="https://drive.google.com/drive/mobile/folders/1v-sZIwSkjEdyqlM68wuS50igBtDqoAJ9" target="_blank" class="gold-link">View All Case Study Receipts →</a>
             </div>
         </div>
     </section>
 
     <section>
         <div class="wrapper" style="text-align: center;">
-            <h2>INVESTMENT [cite: 64]</h2>
-            <p style="color: #444; font-weight: 800; margin-bottom: 50px; letter-spacing: 3px;">BASED ON COMPATIBILITY[cite: 65].</p>
+            <h2>INVESTMENT</h2>
+            <p style="color: #444; font-weight: 800; margin-bottom: 50px; letter-spacing: 3px;">BASED ON COMPATIBILITY[cite: 22, 65].</p>
             <div class="pricing-grid">
                 <div class="price-card" style="opacity: 0.3;">
-                    <p style="font-size: 10px;">STARTER</p>
-                    <div class="price-val">$120 [cite: 67]</div>
+                    <p>STARTER</p>
+                    <div class="price-val">$120 [cite: 25, 67]</div>
                 </div>
                 <div class="price-card highlight">
-                    <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--red); padding: 4px 15px; font-size: 9px; font-weight: 800;">MOST SELECTED</div>
-                    <p style="font-size: 10px; color: var(--red); font-weight: 800;">AUTHORITY</p>
-                    <div class="price-val" style="color: var(--red);">$180 [cite: 68]</div>
-                    <p style="font-size: 11px; font-weight: 700; color: #444;">FULL CHANNEL DOMINATION</p>
+                    <p style="color: var(--red); font-weight: 800;">AUTHORITY</p>
+                    <div class="price-val" style="color: var(--red);">$180 [cite: 26, 68]</div>
+                    <p style="font-size: 11px; font-weight: 700; color: #444;">FULL CHANNEL DOMINATION [cite: 28]</p>
                 </div>
                 <div class="price-card" style="opacity: 0.3;">
-                    <p style="font-size: 10px;">EMPIRE</p>
-                    <div class="price-val">$550 [cite: 69]</div>
+                    <p>EMPIRE</p>
+                    <div class="price-val">$550 [cite: 27, 69]</div>
                 </div>
             </div>
         </div>
@@ -162,8 +156,8 @@
             <div class="author-flex">
                 <img src="https://raw.githubusercontent.com/wakeupwithrafiq/US-REAL-ESTATE-LEADS/main/Md%20Rafiqul%20Islam.jpg" alt="Rafiq">
                 <div class="author-text">
-                    <h2 style="margin-bottom: 20px;">MD RAFIQUL ISLAM[cite: 70].</h2>
-                    <p>"I turn US Realtors who are tired of being 'hidden gems' into the only logical choice in their city"[cite: 71, 72].</p>
+                    <h2>MD RAFIQUL ISLAM.</h2>
+                    <p>"I turn US Realtors who are tired of being 'hidden gems' into the only logical choice in their city"[cite: 30, 72].</p>
                     <p style="margin-top: 30px; font-size: 11px; letter-spacing: 5px; color: #333; font-weight: 800; text-transform: uppercase;">Growth Architect [cite: 73]</p>
                 </div>
             </div>
@@ -173,33 +167,17 @@
     <section id="audit">
         <div class="wrapper">
             <div class="form-box">
-                <h2 style="text-align: center; margin-bottom: 60px; font-size: 30px;">FREE AUDIT [cite: 74]</h2>
+                <h2 style="text-align: center; margin-bottom: 60px; font-size: 30px;">FREE AUDIT [cite: 39, 74]</h2>
                 <form id="auditForm">
                     <div class="form-field">
                         <label>Full Name</label>
-                        <input type="text" name="name" placeholder="ENTER NAME [cite: 76]" required>
+                        <input type="text" placeholder="ENTER NAME [cite: 33, 76]" required>
                     </div>
                     <div class="form-field">
                         <label>Business Email</label>
-                        <input type="email" name="email" id="email" placeholder="ENTER EMAIL [cite: 77]" required>
+                        <input type="email" placeholder="ENTER EMAIL [cite: 35, 77]" required>
                     </div>
-                    <div class="form-field">
-                        <label>Profession</label>
-                        <select name="profession" required>
-                            <option value="">SELECT [cite: 78]</option>
-                            <option value="Agent">REALTOR</option>
-                            <option value="Broker">BROKER</option>
-                        </select>
-                    </div>
-                    <div class="form-field">
-                        <label>Monthly Earnings</label>
-                        <select name="income" required>
-                            <option value="">SELECT [cite: 80]</option>
-                            <option value="0-5k">$0 - $5K</option>
-                            <option value="15k+">$15K+</option>
-                        </select>
-                    </div>
-                    <button type="submit" id="submitBtn" class="btn-cta" style="width: 100%;">Submit For Approval [cite: 81]</button>
+                    <button type="submit" class="btn-cta" style="width: 100%;">Submit Application [cite: 40, 81]</button>
                 </form>
             </div>
         </div>
@@ -207,27 +185,9 @@
 
     <footer>
         <div class="wrapper">
-            <p class="seo-text">
-                YouTube SEO for Realtors | Real Estate YouTube Expert | Rank Property Listing Videos | Local Real Estate SEO | YouTube Lead Generation for Agents
-            </p>
-            <p style="color: #444; font-size: 11px; font-weight: 800; letter-spacing: 3px;">CONTACT@MINDHACKING.SITE [cite: 82]</p>
+            <p style="color: #444; font-size: 11px; font-weight: 800; letter-spacing: 3px;">CONTACT@MINDHACKING.SITE [cite: 41, 82]</p>
         </div>
     </footer>
 
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzG3tpCobPrk7 (truncated for safety)';
-        const form = document.getElementById('auditForm');
-        const btn = document.getElementById('submitBtn');
-
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            const email = document.getElementById('email').value.toLowerCase();
-            if(['tempmail', '10minutemail'].some(d => email.includes(d))) {
-                alert('BUSINESS EMAILS ONLY.'); return;
-            }
-            btn.innerText = "PROCESSING..."; btn.disabled = true;
-            // Fetch logic here
-        });
-    </script>
 </body>
 </html>
