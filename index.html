@@ -1,270 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MD RAFIQUL ISLAM | YouTube Growth Architect</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <style>
-        :root {
-            --red: #B91C1C; /* Blood Red */
-            --bg: #000000;
-            --white: #FFFFFF;
-            --zinc: #0A0A0A;
-        }
 
-        /* Essential Reset - NO SHADOWS, SHARP EDGES */
-        * { margin: 0; padding: 0; box-sizing: border-box; text-shadow: none !important; box-shadow: none !important; }
-        body { background: var(--bg); color: var(--white); font-family: 'Inter', sans-serif; line-height: 1.2; overflow-x: hidden; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        /* SCARCITY BAR (FOMO) */
-        .fomo-top { background: var(--white); color: #000; padding: 15px; text-align: center; font-size: 11px; font-weight: 900; letter-spacing: 5px; text-transform: uppercase; position: sticky; top: 0; z-index: 1000; }
+<title>YouTube SEO for Real Estate Agents | Rank Your Property Videos</title>
 
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
-        section { padding: 150px 0; border-bottom: 1px solid #111; width: 100%; display: block; clear: both; }
+<meta name="description" content="Professional YouTube SEO for real estate agents. Rank property videos, generate organic leads and dominate YouTube search results.">
 
-        /* MASSIVE TYPOGRAPHY */
-        h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(3rem, 11vw, 9.5rem); font-weight: 900; letter-spacing: -7px; text-transform: uppercase; line-height: 0.85; margin-bottom: 50px; }
-        h2 { font-family: 'Montserrat', sans-serif; font-size: clamp(2rem, 6vw, 4.5rem); font-weight: 900; letter-spacing: -3px; text-transform: uppercase; margin-bottom: 40px; }
-        p { font-size: 22px; color: #666; max-width: 800px; font-weight: 400; line-height: 1.4; }
+<meta name="keywords" content="YouTube SEO, YouTube SEO for real estate, real estate YouTube marketing, rank real estate videos on YouTube, YouTube lead generation for agents">
 
-        .btn-elite { background: var(--white); color: #000; padding: 25px 60px; font-weight: 900; text-transform: uppercase; letter-spacing: 4px; text-decoration: none; display: inline-block; font-size: 14px; transition: 0.4s; border: none; cursor: pointer; }
-        .btn-elite:hover { background: var(--red); color: var(--white); transform: translateY(-5px); }
+<style>
 
-        /* LOSS ANALYSIS (GRID) */
-        .loss-layout { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 80px; align-items: center; }
-        .loss-stat { background: var(--red); padding: 100px; text-align: center; color: #000; }
-        .loss-stat h3 { font-size: 110px; font-weight: 900; letter-spacing: -6px; }
+body{
+font-family:Arial, Helvetica, sans-serif;
+margin:0;
+background:#0f172a;
+color:white;
+line-height:1.6;
+}
 
-        /* US VS THEM (FLEX) */
-        .comparison-wrap { display: flex; background: #222; gap: 1px; border: 1px solid #222; margin-top: 80px; }
-        .comp-column { flex: 1; background: #000; padding: 80px; text-align: left; }
-        .comp-column h4 { font-size: 13px; letter-spacing: 5px; color: #444; margin-bottom: 40px; text-transform: uppercase; }
-        .comp-column li { list-style: none; margin-bottom: 25px; font-weight: 700; text-transform: uppercase; font-size: 14px; display: flex; align-items: center; color: #555; }
-        .comp-column.elite-column li { color: var(--white); }
-        .comp-column i { margin-right: 20px; font-size: 18px; }
+section{
+padding:80px 20px;
+max-width:1100px;
+margin:auto;
+}
 
-        /* CASE STUDY (DRIVE LINK) */
-        .proof-box { background: var(--zinc); border: 2px solid #D4AF37; padding: 120px; text-align: center; }
-        .gold-cta { 
-            background: linear-gradient(90deg, #D4AF37, #FBF5B7, #AA771C); 
-            -webkit-background-clip: text; 
-            -webkit-text-fill-color: transparent; 
-            font-size: 38px; font-weight: 900; text-decoration: underline; text-transform: uppercase; transition: 0.3s;
-        }
-        .gold-cta:hover { filter: brightness(1.2); transform: scale(1.05); }
+h1,h2,h3{
+margin-bottom:20px;
+}
 
-        /* PRICING (DECOY ARCHITECTURE) */
-        .pricing-layout { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 100px; }
-        .price-box { background: #050505; border: 1px solid #111; padding: 80px 40px; text-align: center; transition: 0.4s; }
-        .price-box.featured { border: 2px solid var(--red); transform: scale(1.1); background: #000; z-index: 10; position: relative; }
-        .featured-tag { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--red); color: var(--white); font-size: 10px; padding: 6px 20px; font-weight: 900; text-transform: uppercase; }
-        .price-val { font-size: 85px; font-weight: 900; margin: 30px 0; letter-spacing: -5px; }
+.hero{
+text-align:center;
+padding:120px 20px;
+}
 
-        /* AUTHOR */
-        .author-layout { display: flex; gap: 80px; align-items: center; text-align: left; }
-        .author-layout img { flex: 0.8; width: 100%; border: 1px solid #222; }
-        .author-info { flex: 1.2; }
-        .author-info p { font-size: 28px; font-weight: 400; color: #888; line-height: 1.3; font-style: italic; margin-top: 30px; }
+button{
+background:#ff3c3c;
+color:white;
+border:none;
+padding:15px 30px;
+font-size:16px;
+cursor:pointer;
+border-radius:6px;
+}
 
-        /* FORM */
-        .form-machine { max-width: 850px; margin: 0 auto; background: var(--zinc); padding: 100px; border: 1px solid #1A1A1A; text-align: left; }
-        .input-row { margin-bottom: 50px; position: relative; }
-        label { font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: 4px; color: #444; margin-bottom: 20px; display: block; }
-        input, select { width: 100%; background: transparent; border: none; border-bottom: 3px solid #222; padding: 20px 0; color: #fff; font-size: 20px; outline: none; font-weight: 700; text-transform: uppercase; }
-        input:focus { border-bottom-color: var(--white); }
-        .req { color: var(--red); position: absolute; right: 0; top: 0; font-weight: 900; font-size: 24px; }
+button:hover{
+background:#ff1f1f;
+}
 
-        /* FOOTER SEO */
-        footer { padding: 150px 0; text-align: center; border-top: 1px solid #111; }
-        .seo-box { font-size: 10px; color: #111; text-transform: uppercase; letter-spacing: 3px; line-height: 2.8; max-width: 1000px; margin: 0 auto 60px; font-weight: 900; }
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
 
-        @media (max-width: 1000px) {
-            .loss-layout, .comparison-wrap, .pricing-layout, .author-layout { flex-direction: column; grid-template-columns: 1fr; }
-            .price-box.featured { transform: scale(1); }
-            h1 { font-size: 4.5rem; }
-            .form-machine { padding: 40px 20px; }
-        }
-    </style>
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:10px;
+}
+
+.pricing{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.price-card{
+background:#1e293b;
+padding:30px;
+border-radius:12px;
+text-align:center;
+}
+
+.popular{
+border:2px solid #ff3c3c;
+}
+
+form{
+display:flex;
+flex-direction:column;
+gap:10px;
+max-width:400px;
+}
+
+input,select{
+padding:12px;
+border-radius:6px;
+border:none;
+}
+
+.footer{
+text-align:center;
+padding:40px;
+background:#020617;
+}
+
+.timer{
+font-size:24px;
+color:#ff3c3c;
+margin-top:10px;
+}
+
+</style>
+
 </head>
+
 <body>
 
-    <div class="fomo-top">ONLY 1 PARTNERSHIP SLOT REMAINING FOR MARCH 2026.</div>
+<!-- HERO -->
 
-    <section class="container">
-        <h1>STOP BEING <br> <span style="color: var(--red);">INVISIBLE.</span></h1>
-        <p>Your competitors are securing high-ticket listings via YouTube while you wait for referrals. We rank your brand #1 or we don't work together.</p>
-        <a href="#audit" class="btn-elite" style="margin-top: 50px;">Start My Free Audit</a>
-    </section>
+<section class="hero">
 
-    <section class="container">
-        <div class="loss-layout">
-            <div>
-                <h2>The <span style="color: var(--red);">$50,000</span> Annual Gap. [cite: 6, 8]</h2>
-                <p>Every seller who doesn't find you on YouTube is a commission check written to your competition. [cite: 9]</p>
-            </div>
-            <div class="loss-stat">
-                <p style="font-size: 12px; font-weight: 900; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 3px; color: #000;">COMMISSION LOSS / YEAR</p>
-                <h3>$50K+ [cite: 8]</h3>
-            </div>
-        </div>
-    </section>
+<h1>YouTube SEO for Real Estate Agents</h1>
 
-    <section class="container">
-        <div style="text-align: center; width: 100%;">
-            <h2 style="font-size: 50px; font-weight: 900; margin-bottom: 20px;">THE MARKET GAP. [cite: 10]</h2>
-            <div class="comparison-wrap">
-                <div class="comp-column">
-                    <h4>Traditional Agencies [cite: 11]</h4>
-                    <ul>
-                        <li><i class="fa fa-times" style="color: #333;"></i> Random Keyword Guessing</li>
-                        <li><i class="fa fa-times" style="color: #333;"></i> Vanity Metrics & Fake Views</li>
-                        <li><i class="fa fa-times" style="color: #333;"></i> No US Real Estate Context</li>
-                        <li><i class="fa fa-times" style="color: #333;"></i> High Fees, No Attribution</li>
-                    </ul>
-                </div>
-                <div class="comp-column elite-column">
-                    <h4 style="color: var(--red);">Grow Up With Rafiq [cite: 12]</h4>
-                    <ul>
-                        <li><i class="fa fa-check" style="color: var(--red);"></i> Hyper-Local KGR Research [cite: 14]</li>
-                        <li><i class="fa fa-check" style="color: var(--red);"></i> High-Intent Lead Optimization [cite: 15]</li>
-                        <li><i class="fa fa-check" style="color: var(--red);"></i> Exclusive Realtor Lead Gen [cite: 16]</li>
-                        <li><i class="fa fa-check" style="color: var(--red);"></i> Performance-Based ROI [cite: 16]</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+<p>Turn your property videos into a 24/7 lead generation machine using professional YouTube SEO.</p>
 
-    <section class="container">
-        <div class="proof-box">
-            <h2>Undeniable Market Authority. [cite: 17]</h2>
-            <p style="color: #666; margin-bottom: 60px;">We rank videos with 100/100 SEO scores. We don't sell hope, we sell data. [cite: 18]</p>
-            <a href="https://drive.google.com/drive/mobile/folders/1v-sZIwSkjEdyqlM68wuS50igBtDqoAJ9" target="_blank" class="gold-cta">View All Case Study Receipts → [cite: 19]</a>
-        </div>
-    </section>
+<button onclick="scrollToForm()">Grab Your Free Website Audit</button>
 
-    <section class="container">
-        <div style="text-align: center; width: 100%;">
-            <h2 style="font-size: 55px;">INVESTMENT [cite: 20]</h2>
-            <p style="color: #444; margin-bottom: 100px; font-weight: 900; text-transform: uppercase; letter-spacing: 5px;">Based On Compatibility. [cite: 21]</p>
-            <div class="pricing-layout">
-                <div class="price-box" style="opacity: 0.2;">
-                    <p style="font-size: 11px; font-weight: 900;">STARTER (7 DAYS)</p>
-                    <div class="price-val" style="font-size: 60px;">$120 [cite: 23]</div>
-                </div>
-                <div class="price-box featured">
-                    <div class="featured-tag">Most Selected [cite: 22]</div>
-                    <p style="font-size: 11px; font-weight: 900; color: var(--red);">AUTHORITY (30 DAYS)</p>
-                    <div class="price-val" style="color: var(--red);">$180 [cite: 25]</div>
-                    <ul style="text-align: left; list-style: none; font-size: 14px; font-weight: 800; color: #888; line-height: 2.5; margin-bottom: 50px;">
-                        <li>✓ Full Channel Domination [cite: 27]</li>
-                        <li>✓ Local Real Estate SEO [cite: 28]</li>
-                        <li>✓ High Intent Realtor Keywords [cite: 29]</li>
-                        <li>✓ Strategic Revenue Audit [cite: 30]</li>
-                    </ul>
-                    <a href="#audit" class="btn-elite" style="width: 100%; text-align: center;">Claim Slot [cite: 31]</a>
-                </div>
-                <div class="price-box" style="opacity: 0.2;">
-                    <p style="font-size: 11px; font-weight: 900;">EMPIRE (90 DAYS)</p>
-                    <div class="price-val" style="font-size: 60px;">$550 [cite: 26]</div>
-                </div>
-            </div>
-            <p style="text-align: center; margin-top: 100px; font-size: 14px; color: #222; font-style: italic; font-weight: 900;">"Secure your multi-million dollar business legacy."</p>
-        </div>
-    </section>
+<p>Only <b>1 client slot remaining this month</b></p>
 
-    <section class="container">
-        <div class="author-layout">
-            <img src="https://raw.githubusercontent.com/wakeupwithrafiq/US-REAL-ESTATE-LEADS/main/Md%20Rafiqul%20Islam.jpg" alt="Rafiq">
-            <div class="author-info">
-                <h2>Md Rafiqul Islam. [cite: 32]</h2>
-                <p>"I take US Realtors who are tired of being 'hidden gems' and turn them into the only logical choice in their city." [cite: 33]</p>
-                <p style="margin-top: 50px; font-size: 12px; letter-spacing: 5px; color: #444; font-weight: 900; text-transform: uppercase;">Lead Growth Architect</p>
-            </div>
-        </div>
-    </section>
+<div class="timer" id="timer"></div>
 
-    <section id="audit" class="container">
-        <div class="form-machine">
-            <h2 style="text-align: center; margin-bottom: 80px; font-size: 38px; font-weight: 900;">FREE AUDIT APPLICATION [cite: 34]</h2>
-            <form id="auditForm">
-                <div class="input-row">
-                    <label>Full Name</label>
-                    <input type="text" name="name" id="name" placeholder="ENTER NAME [cite: 24]" required>
-                    <span class="req">*</span>
-                </div>
-                <div class="input-row">
-                    <label>Business Email</label>
-                    <input type="email" name="email" id="email" placeholder="ENTER BUSINESS EMAIL [cite: 24]" required>
-                    <span class="req">*</span>
-                </div>
-                <div class="input-row">
-                    <label>Profession</label>
-                    <select name="profession" id="profession" required>
-                        <option value="">SELECT PROFESSION [cite: 24]</option>
-                        <option value="Agent">REAL ESTATE AGENT</option>
-                        <option value="Broker">BROKER</option>
-                        <option value="Investor">INVESTOR</option>
-                        <option value="Others">OTHERS</option>
-                    </select>
-                    <span class="req">*</span>
-                </div>
-                <div class="input-row">
-                    <label>Monthly Earnings</label>
-                    <select name="income" id="income" required>
-                        <option value="">SELECT EARNINGS [cite: 24]</option>
-                        <option value="0-5k">$0 - $5K</option>
-                        <option value="5-15k">$5K - $15K</option>
-                        <option value="15k+">$15K+</option>
-                        <option value="Others">OTHERS</option>
-                    </select>
-                    <span class="req">*</span>
-                </div>
-                <button type="submit" id="submitBtn" class="btn-elite" style="width: 100%;">Submit For Approval [cite: 35]</button>
-            </form>
-            <p id="timer" style="text-align: center; margin-top: 60px; font-size: 12px; color: var(--red); font-weight: 900; letter-spacing: 5px;">OFFER EXPIRES IN: 23:59:59 [cite: 36]</p>
-        </div>
-    </section>
+</section>
 
-    <footer>
-        <div class="container">
-            <h2 style="font-size: 20px; letter-spacing: 15px; color: #111; margin-bottom: 70px;">GROW UP WITH RAFIQ</h2>
-            <p class="seo-box">
-                YouTube SEO for Realtors | Real Estate YouTube Expert | Rank Property Listing Videos | Realtor Video Marketing Strategy | Local Real Estate SEO | YouTube Lead Generation for Agents | High Intent Realtor Keywords | Viral Real Estate Content SEO | Property Video Ranking Service | Real Estate Authority Builder
-            </p>
-            <p style="color: #444; font-size: 13px; letter-spacing: 5px; font-weight: 900;">CONTACT@MINDHACKING.SITE</p>
-        </div>
-    </footer>
+<!-- LOSS SECTION -->
 
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzG3tpCobPrk7Q4BxBOqsgmkU45TrHhbQoe-UBpK1u75BncwQ0UYO_HR9FiyJLFX-74/exec';
-        const form = document.getElementById('auditForm');
-        const btn = document.getElementById('submitBtn');
+<section>
 
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            const email = document.getElementById('email').value.toLowerCase();
-            if(['tempmail', '10minutemail', 'guerrillamail'].some(d => email.includes(d))) {
-                alert('BUSINESS EMAILS ONLY. ACCESS DENIED.');
-                return;
-            }
-            btn.innerText = "PROCESSING..."; btn.disabled = true;
-            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(r => {
-                alert('🔥 SUCCESS! WE WILL CONTACT YOU WITHIN 24 HOURS.');
-                form.reset(); btn.innerText = "Submit For Approval"; btn.disabled = false;
-            })
-            .catch(e => { alert('CONNECTION ERROR.'); btn.disabled = false; });
-        });
+<h2>How Much Money Are You Losing From YouTube?</h2>
 
-        setInterval(() => {
-            const now = new Date();
-            const h = 23 - now.getHours(); const m = 59 - now.getMinutes(); const s = 59 - now.getSeconds();
-            document.getElementById('timer').innerText = `OFFER EXPIRES IN: ${h<10?'0':''}${h}:${m<10?'0':''}${m}:${s<10?'0':''}${s}`;
-        }, 1000);
-    </script>
+<p>Thousands of buyers search YouTube every day for homes, neighborhoods and relocation guides.</p>
+
+<p>If your videos don't rank using proper YouTube SEO, those buyers go directly to your competitors.</p>
+
+<p>Average commission per deal: <b>$8,000</b></p>
+
+<p>Even just one extra deal per month could mean <b>$96,000 per year.</b></p>
+
+</section>
+
+<!-- COMPETITOR -->
+
+<section>
+
+<h2>Your Competitors Are Already Ranking</h2>
+
+<div class="grid">
+
+<div class="card">Appear in YouTube search</div>
+
+<div class="card">Dominate Google video results</div>
+
+<div class="card">Build trust before the first call</div>
+
+<div class="card">Generate inbound buyer leads</div>
+
+</div>
+
+<p>Right now an agent in your city is building the YouTube authority you should have.</p>
+
+</section>
+
+<!-- SYSTEM -->
+
+<section>
+
+<h2>The Real Estate YouTube SEO System</h2>
+
+<div class="grid">
+
+<div class="card">Keyword research for buyer searches</div>
+
+<div class="card">Video optimization</div>
+
+<div class="card">Click optimized titles</div>
+
+<div class="card">YouTube algorithm signals</div>
+
+<div class="card">Lead capture descriptions</div>
+
+</div>
+
+</section>
+
+<!-- RESULTS -->
+
+<section>
+
+<h2>Real Results From YouTube SEO</h2>
+
+<p>Upload before/after screenshots of YouTube analytics when available.</p>
+
+<div class="grid">
+
+<div class="card">
+<h3>Before</h3>
+<p>Views: 120/month</p>
+</div>
+
+<div class="card">
+<h3>After</h3>
+<p>Views: 8,400/month</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- US VS OTHERS -->
+
+<section>
+
+<h2>Why Agents Choose Us</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Others</h3>
+<ul>
+<li>Generic SEO agencies</li>
+<li>No real estate experience</li>
+<li>No YouTube specialization</li>
+<li>Slow results</li>
+<li>No lead strategy</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Us</h3>
+<ul>
+<li>YouTube SEO specialists</li>
+<li>Real estate niche focus</li>
+<li>Algorithm optimization</li>
+<li>Faster ranking growth</li>
+<li>Lead generation focused</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<!-- PRICING -->
+
+<section>
+
+<h2>Simple Pricing</h2>
+
+<div class="pricing">
+
+<div class="price-card">
+
+<h3>Starter</h3>
+
+<h2>$99</h2>
+
+<p>3 Video SEO Optimizations</p>
+
+<p>Basic Keyword Research</p>
+
+</div>
+
+<div class="price-card popular">
+
+<h3>PRO (Best Value)</h3>
+
+<h2>$180</h2>
+
+<p>8 Video SEO Optimization</p>
+
+<p>Real Estate Keyword Research</p>
+
+<p>Title + Tag Optimization</p>
+
+<p>CTR Improvement Strategy</p>
+
+</div>
+
+<div class="price-card">
+
+<h3>Elite</h3>
+
+<h2>$349</h2>
+
+<p>15 Video Optimizations</p>
+
+<p>Full Channel Audit</p>
+
+<p>Competitor Analysis</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- AUTHOR -->
+
+<section>
+
+<h2>Meet The Strategist</h2>
+
+<p>Upload founder photo here.</p>
+
+<p>This YouTube SEO system was developed after analyzing hundreds of real estate channels and studying how the YouTube algorithm ranks videos.</p>
+
+<p>The mission is simple: help real estate agents generate consistent organic leads from YouTube.</p>
+
+</section>
+
+<!-- FORM -->
+
+<section id="audit">
+
+<h2>Grab Your Free Website Audit</h2>
+
+<form id="auditForm">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<select required>
+
+<option value="">Select Profession</option>
+
+<option>Real Estate Agent</option>
+
+<option>Broker</option>
+
+<option>Content Creator</option>
+
+<option>Business Owner</option>
+
+<option>Others</option>
+
+</select>
+
+<select required>
+
+<option value="">Monthly Earnings</option>
+
+<option>$0-$5k</option>
+
+<option>$5k-$20k</option>
+
+<option>$20k-$50k</option>
+
+<option>$50k+</option>
+
+<option>Others</option>
+
+</select>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</section>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<p>Contact: yourbusiness@email.com</p>
+
+<p>Response time: within 24 hours</p>
+
+</div>
+
+<script>
+
+function scrollToForm(){
+document.getElementById("audit").scrollIntoView();
+}
+
+var countDownDate = new Date();
+countDownDate.setHours(countDownDate.getHours() + 24);
+
+var x = setInterval(function() {
+
+var now = new Date().getTime();
+
+var distance = countDownDate - now;
+
+var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+document.getElementById("timer").innerHTML = hours + "h "
++ minutes + "m " + seconds + "s ";
+
+}, 1000);
+
+document.getElementById("auditForm").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+alert("Congratulations! Your audit request has been received. Our team will email your report within 24 hours.");
+
+});
+
+</script>
+
 </body>
 </html>
