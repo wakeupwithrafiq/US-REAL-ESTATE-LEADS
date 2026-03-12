@@ -4,92 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MD RAFIQUL ISLAM | US Real Estate YouTube SEO Architect</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
         :root { --red: #B91C1C; --bg: #000000; --white: #FFFFFF; }
         
-        /* Hard Reset - No Shadows, No Mess */
-        * { margin: 0; padding: 0; box-sizing: border-box; text-shadow: none !important; box-shadow: none !important; border: none; outline: none; }
-        body { background: var(--bg); color: var(--white); font-family: 'Inter', sans-serif; line-height: 1.4; overflow-x: hidden; width: 100%; }
+        /* Hard Reset - No Shadows, No Gaps */
+        * { margin: 0; padding: 0; box-sizing: border-box; text-shadow: none !important; border: none; outline: none; }
+        body { background: var(--bg); color: var(--white); font-family: 'Inter', sans-serif; line-height: 1.2; overflow-x: hidden; width: 100%; }
 
-        /* Urgency Bar */
-        .urgency-bar { background: var(--white); color: #000; padding: 12px; text-align: center; font-size: 11px; font-weight: 800; letter-spacing: 3px; text-transform: uppercase; position: sticky; top: 0; z-index: 1000; }
+        /* Scarcity Bar */
+        .scarcity { background: var(--white); color: #000; padding: 15px; text-align: center; font-size: 11px; font-weight: 900; letter-spacing: 5px; text-transform: uppercase; width: 100%; position: sticky; top: 0; z-index: 1000; }
 
-        .wrapper { width: 90%; max-width: 1200px; margin: 0 auto; }
-        section { width: 100%; padding: 80px 0; border-bottom: 1px solid #111; }
+        .wrapper { width: 90%; max-width: 1400px; margin: 0 auto; }
+        section { width: 100%; padding: clamp(100px, 15vh, 180px) 0; border-bottom: 1px solid #111; }
 
         /* Balanced Typography */
-        h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(2.5rem, 8vw, 6rem); font-weight: 800; text-transform: uppercase; line-height: 1.1; margin-bottom: 30px; }
-        h2 { font-family: 'Montserrat', sans-serif; font-size: clamp(1.8rem, 5vw, 3.5rem); font-weight: 800; text-transform: uppercase; margin-bottom: 25px; }
-        p { font-size: 1.1rem; color: #888; max-width: 750px; margin-bottom: 40px; }
+        h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(2.8rem, 11vw, 9rem); font-weight: 900; letter-spacing: -6px; text-transform: uppercase; line-height: 0.85; margin-bottom: 40px; }
+        h2 { font-family: 'Montserrat', sans-serif; font-size: clamp(2rem, 7vw, 4.5rem); font-weight: 900; letter-spacing: -3px; text-transform: uppercase; margin-bottom: 30px; }
+        p { font-size: clamp(1.1rem, 2.2vw, 1.4rem); color: #666; max-width: 800px; line-height: 1.4; margin-bottom: 50px; font-weight: 400; }
 
-        .btn-cta { background: var(--white); color: #000; padding: 18px 45px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; text-decoration: none; display: inline-block; font-size: 14px; transition: 0.3s; cursor: pointer; }
-        .btn-cta:hover { background: var(--red); color: var(--white); }
+        .btn-elite { background: var(--white); color: #000; padding: 25px 65px; font-weight: 900; text-transform: uppercase; letter-spacing: 4px; text-decoration: none; display: inline-block; font-size: 14px; transition: 0.3s; cursor: pointer; }
+        .btn-elite:hover { background: var(--red); color: var(--white); transform: translateY(-5px); }
 
-        /* Loss Grid */
-        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 60px; align-items: center; }
-        .red-box { background: var(--red); padding: 50px 30px; text-align: center; color: #000; }
-        .red-box h3 { font-size: 4.5rem; font-weight: 800; line-height: 1; }
+        /* Loss Analysis */
+        .loss-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 80px; align-items: center; }
+        .loss-stat-box { background: var(--red); padding: clamp(60px, 10vw, 120px); text-align: center; color: #000; width: 100%; }
+        .loss-stat-box h3 { font-size: clamp(4rem, 11vw, 8.5rem); font-weight: 900; letter-spacing: -6px; line-height: 1; }
 
-        /* Us vs Them (Errors Fixed) */
-        .comparison-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2px; background: #222; margin-top: 40px; border: 1px solid #222; }
-        .comp-card { background: #000; padding: 50px 30px; }
-        .comp-card h4 { font-size: 11px; letter-spacing: 3px; color: #555; margin-bottom: 30px; text-transform: uppercase; }
-        .comp-card li { list-style: none; margin-bottom: 15px; font-weight: 600; text-transform: uppercase; font-size: 13px; display: flex; align-items: center; color: #666; }
-        .comp-card.featured li { color: #fff; }
-        .comp-card i { margin-right: 15px; color: var(--red); }
+        /* Comparison Table */
+        .comp-grid { display: flex; flex-wrap: wrap; background: #222; gap: 1px; border: 1px solid #222; margin-top: 80px; width: 100%; }
+        .comp-side { flex: 1; min-width: 320px; background: #000; padding: clamp(40px, 8vw, 100px); text-align: left; }
+        .comp-side h4 { font-size: 13px; letter-spacing: 5px; color: #444; margin-bottom: 40px; text-transform: uppercase; }
+        .comp-side li { list-style: none; margin-bottom: 25px; font-weight: 700; text-transform: uppercase; font-size: clamp(12px, 2vw, 15px); display: flex; align-items: center; color: #555; }
+        .comp-side.authority li { color: var(--white); }
+        .comp-side i { margin-right: 20px; color: var(--red); font-size: 18px; }
 
         /* Gold Authority */
-        .gold-border { border: 2px solid #D4AF37; padding: 70px 40px; text-align: center; }
-        .gold-link { color: #D4AF37; font-size: 1.5rem; font-weight: 800; text-decoration: underline; text-transform: uppercase; transition: 0.3s; }
+        .gold-box { border: 2px solid #D4AF37; padding: clamp(70px, 10vw, 120px) 40px; text-align: center; width: 100%; background: #0A0A0A; }
+        .gold-receipts { background: linear-gradient(90deg, #D4AF37, #FBF5B7, #AA771C); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: clamp(1.2rem, 5vw, 2.8rem); font-weight: 900; text-decoration: underline; text-transform: uppercase; transition: 0.3s; }
 
-        /* Pricing */
-        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 60px; }
-        .price-card { background: #050505; border: 1px solid #111; padding: 50px 20px; text-align: center; }
-        .price-card.highlight { border: 2px solid var(--red); transform: scale(1.05); position: relative; }
-        .price-val { font-size: 4rem; font-weight: 800; margin: 20px 0; }
+        /* Pricing tiers */
+        .price-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; margin-top: 100px; width: 100%; }
+        .price-item { background: #050505; border: 1px solid #111; padding: clamp(40px, 8vw, 100px) 30px; text-align: center; }
+        .price-item.main { border: 2px solid var(--red); transform: scale(1.05); background: #000; position: relative; }
+        .badge { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--red); color: var(--white); font-size: 10px; padding: 6px 25px; font-weight: 900; text-transform: uppercase; }
+        .p-amount { font-size: clamp(4rem, 10vw, 6.5rem); font-weight: 900; margin: 30px 0; letter-spacing: -5px; line-height: 1; }
 
-        /* Author */
-        .author-flex { display: flex; flex-wrap: wrap; gap: 50px; align-items: center; }
-        .author-flex img { width: 100%; max-width: 400px; border: 1px solid #222; }
-        .author-text p { font-size: 1.6rem; font-style: italic; color: #666; line-height: 1.3; }
+        /* Author Flex */
+        .author-wrap { display: flex; flex-wrap: wrap; gap: clamp(40px, 10vw, 100px); align-items: center; }
+        .author-wrap img { flex: 0.8; width: 100%; max-width: 480px; border: 1px solid #222; }
+        .author-info { flex: 1.2; }
+        .author-info p { font-size: clamp(1.4rem, 3.5vw, 2.2rem); font-style: italic; color: #888; margin-top: 40px; }
 
-        /* Form */
-        .form-box { max-width: 700px; margin: 0 auto; background: #0A0A0A; padding: 60px 40px; border: 1px solid #1A1A1A; }
-        .form-field { margin-bottom: 35px; }
-        label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: #444; margin-bottom: 12px; display: block; }
-        input, select { width: 100%; background: transparent; border: none; border-bottom: 2px solid #222; padding: 12px 0; color: #fff; font-size: 16px; outline: none; font-weight: 600; text-transform: uppercase; }
+        /* Lead Form */
+        .form-master { max-width: 850px; margin: 0 auto; background: #0A0A0A; padding: clamp(40px, 10vw, 100px); border: 1px solid #1A1A1A; text-align: left; }
+        .input-row { margin-bottom: 50px; position: relative; }
+        label { font-size: 11px; font-weight: 900; text-transform: uppercase; letter-spacing: 5px; color: #444; margin-bottom: 20px; display: block; }
+        input, select { width: 100%; background: transparent; border: none; border-bottom: 3px solid #222; padding: 18px 0; color: #fff; font-size: clamp(16px, 2vw, 22px); outline: none; font-weight: 700; text-transform: uppercase; border-radius: 0; }
+        input:focus { border-bottom-color: var(--white); }
+
+        footer { padding: 140px 0; text-align: center; border-top: 1px solid #111; }
+        .seo-list { font-size: 10px; color: #111; text-transform: uppercase; letter-spacing: 3px; line-height: 2.8; max-width: 1000px; margin: 0 auto 60px; font-weight: 900; }
 
         @media (max-width: 768px) {
-            h1 { font-size: 3rem; }
-            .price-card.highlight { transform: scale(1); }
+            h1 { letter-spacing: -3px; }
+            .price-item.main { transform: scale(1); }
+            .author-wrap { text-align: center; justify-content: center; }
         }
     </style>
 </head>
 <body>
 
-    <div class="urgency-bar">ONLY 1 PARTNERSHIP SLOT REMAINING FOR MARCH 2026.</div>
+    <div class="scarcity">ONLY 1 PARTNERSHIP SLOT REMAINING FOR MARCH 2026.</div>
 
     <section>
         <div class="wrapper">
             <h1>STOP BEING <br> <span style="color: var(--red);">INVISIBLE.</span></h1>
-            <p>Your competitors are securing high-ticket listings via YouTube while you wait for referrals[cite: 31, 43]. We rank your brand #1 or we don't work together[cite: 4, 44].</p>
-            <a href="#audit" class="btn-cta">Start My Free Audit</a>
+            <p>Your competitors are securing high-ticket listings via YouTube while you wait for referrals. We rank your brand #1 or we don't work together[cite: 4, 44].</p>
+            <a href="#audit" class="btn-elite">Start My Free Audit</a>
         </div>
     </section>
 
     <section>
         <div class="wrapper">
-            <div class="grid-2">
+            <div class="loss-layout">
                 <div>
-                    <h2>The <span style="color: var(--red);">$50,000</span> Annual Gap.</h2>
-                    <p>Every homeowner who doesn't find you on YouTube is a commission check written to your competition[cite: 7, 48]. Attention is equity[cite: 7, 48].</p>
+                    <h2>The <span style="color: var(--red); font-weight: 900;">$50,000</span> Annual Gap[cite: 6, 46, 47].</h2>
+                    <p>Every homeowner who doesn't find you on YouTube is a commission check written to your competition. Attention is equity[cite: 7, 48].</p>
                 </div>
-                <div class="red-box">
-                    <p style="font-size: 11px; font-weight: 800; margin-bottom: 10px;">REVENUE LOSS / YR</p>
-                    <h3>$50K+</h3>
+                <div class="loss-stat-box">
+                    <p style="font-size: 12px; font-weight: 900; margin-bottom: 10px; color: #000; letter-spacing: 4px;">REVENUE LOSS / YR</p>
+                    <h3>$50K+ [cite: 9, 49]</h3>
                 </div>
             </div>
         </div>
@@ -97,18 +104,18 @@
 
     <section>
         <div class="wrapper" style="text-align: center;">
-            <h2>THE MARKET GAP.</h2>
-            <div class="comparison-grid">
-                <div class="comp-card">
+            <h2>THE MARKET GAP[cite: 10, 50].</h2>
+            <div class="comp-grid">
+                <div class="comp-side">
                     <h4>Traditional Agencies</h4>
                     <ul>
-                        <li><i class="fa fa-times"></i> Random Keywords [cite: 12, 52]</li>
-                        <li><i class="fa fa-times"></i> Fake Metrics [cite: 12, 53]</li>
-                        <li><i class="fa fa-times"></i> No Real Estate Focus [cite: 13, 54]</li>
+                        <li><i class="fa fa-times" style="color: #333;"></i> Random Keyword Guessing [cite: 12, 52]</li>
+                        <li><i class="fa fa-times" style="color: #333;"></i> Vanity Metrics & Fake Views [cite: 12, 53]</li>
+                        <li><i class="fa fa-times" style="color: #333;"></i> No US Real Estate Focus [cite: 13, 54]</li>
                     </ul>
                 </div>
-                <div class="comp-card featured">
-                    <h4 style="color: var(--red);">Grow Up With Rafiq</h4>
+                <div class="comp-side authority">
+                    <h4 style="color: var(--red);">Grow Up With Rafiq [cite: 14, 55]</h4>
                     <ul>
                         <li><i class="fa fa-check"></i> Hyper-Local KGR Research [cite: 15, 56]</li>
                         <li><i class="fa fa-check"></i> High-Intent Lead Flow [cite: 16, 57]</li>
@@ -121,31 +128,32 @@
 
     <section>
         <div class="wrapper">
-            <div class="gold-border">
-                <h2>Undeniable Authority.</h2>
-                <p>We rank videos with 100/100 SEO scores[cite: 19, 61]. We don't sell hope, we sell data[cite: 19, 62].</p>
-                <a href="https://drive.google.com/drive/mobile/folders/1v-sZIwSkjEdyqlM68wuS50igBtDqoAJ9" target="_blank" class="gold-link">View All Case Study Receipts →</a>
+            <div class="gold-box">
+                <h2>Undeniable Authority[cite: 18, 59, 60].</h2>
+                <p style="margin: 0 auto 60px; color: #666;">We rank videos with 100/100 SEO scores. We don't sell hope, we sell data[cite: 19, 61, 62].</p>
+                <a href="https://drive.google.com/drive/mobile/folders/1v-sZIwSkjEdyqlM68wuS50igBtDqoAJ9" target="_blank" class="gold-receipts">View All Case Study Receipts → [cite: 20, 63]</a>
             </div>
         </div>
     </section>
 
     <section>
         <div class="wrapper" style="text-align: center;">
-            <h2>INVESTMENT</h2>
-            <p style="color: #444; font-weight: 800; margin-bottom: 50px; letter-spacing: 3px;">BASED ON COMPATIBILITY[cite: 22, 65].</p>
-            <div class="pricing-grid">
-                <div class="price-card" style="opacity: 0.3;">
-                    <p>STARTER</p>
-                    <div class="price-val">$120 [cite: 25, 67]</div>
+            <h2>INVESTMENT [cite: 21, 64]</h2>
+            <p style="color: #444; font-weight: 900; margin-bottom: 80px; letter-spacing: 5px;">BASED ON CHANNEL COMPATIBILITY[cite: 22, 65].</p>
+            <div class="price-layout">
+                <div class="price-item" style="opacity: 0.15;">
+                    <p style="font-size: 11px;">STARTER (7 DAYS) [cite: 25, 67]</p>
+                    <div class="p-amount">$120</div>
                 </div>
-                <div class="price-card highlight">
-                    <p style="color: var(--red); font-weight: 800;">AUTHORITY</p>
-                    <div class="price-val" style="color: var(--red);">$180 [cite: 26, 68]</div>
-                    <p style="font-size: 11px; font-weight: 700; color: #444;">FULL CHANNEL DOMINATION [cite: 28]</p>
+                <div class="price-item main">
+                    <div class="badge">MOST SELECTED [cite: 23, 66]</div>
+                    <p style="font-size: 11px; color: var(--red); font-weight: 900;">AUTHORITY (30 DAYS) [cite: 24]</p>
+                    <div class="p-amount" style="color: var(--red);">$180 [cite: 26, 68]</div>
+                    <p style="font-size: 13px; font-weight: 800; color: #555; text-transform: uppercase;">Full Channel Domination [cite: 28]</p>
                 </div>
-                <div class="price-card" style="opacity: 0.3;">
-                    <p>EMPIRE</p>
-                    <div class="price-val">$550 [cite: 27, 69]</div>
+                <div class="price-item" style="opacity: 0.15;">
+                    <p style="font-size: 11px;">EMPIRE (90 DAYS) [cite: 27, 69]</p>
+                    <div class="p-amount">$550</div>
                 </div>
             </div>
         </div>
@@ -153,12 +161,12 @@
 
     <section>
         <div class="wrapper">
-            <div class="author-flex">
+            <div class="author-wrap">
                 <img src="https://raw.githubusercontent.com/wakeupwithrafiq/US-REAL-ESTATE-LEADS/main/Md%20Rafiqul%20Islam.jpg" alt="Rafiq">
-                <div class="author-text">
-                    <h2>MD RAFIQUL ISLAM.</h2>
-                    <p>"I turn US Realtors who are tired of being 'hidden gems' into the only logical choice in their city"[cite: 30, 72].</p>
-                    <p style="margin-top: 30px; font-size: 11px; letter-spacing: 5px; color: #333; font-weight: 800; text-transform: uppercase;">Growth Architect [cite: 73]</p>
+                <div class="author-info">
+                    <h2>Md <span style="color: var(--red);">Rafiqul</span> Islam[cite: 29, 70].</h2>
+                    <p>"I turn US Realtors who are tired of being 'hidden gems' into the only logical choice in their city"[cite: 30, 71, 72].</p>
+                    <p style="margin-top: 50px; font-size: 12px; letter-spacing: 10px; color: #444; font-weight: 900; text-transform: uppercase;">Lead Growth Architect </p>
                 </div>
             </div>
         </div>
@@ -166,18 +174,34 @@
 
     <section id="audit">
         <div class="wrapper">
-            <div class="form-box">
-                <h2 style="text-align: center; margin-bottom: 60px; font-size: 30px;">FREE AUDIT [cite: 39, 74]</h2>
+            <div class="form-master">
+                <h2 style="text-align: center; margin-bottom: 80px; font-size: 35px;">FREE AUDIT [cite: 39, 74]</h2>
                 <form id="auditForm">
-                    <div class="form-field">
-                        <label>Full Name</label>
-                        <input type="text" placeholder="ENTER NAME [cite: 33, 76]" required>
+                    <div class="input-row">
+                        <label>Full Name [cite: 32, 75]</label>
+                        <input type="text" name="name" placeholder="ENTER NAME [cite: 33, 76]" required>
                     </div>
-                    <div class="form-field">
-                        <label>Business Email</label>
-                        <input type="email" placeholder="ENTER EMAIL [cite: 35, 77]" required>
+                    <div class="input-row">
+                        <label>Business Email [cite: 34]</label>
+                        <input type="email" name="email" id="email" placeholder="ENTER EMAIL [cite: 35, 77]" required>
                     </div>
-                    <button type="submit" class="btn-cta" style="width: 100%;">Submit Application [cite: 40, 81]</button>
+                    <div class="input-row">
+                        <label>Profession [cite: 36, 78]</label>
+                        <select name="profession" required>
+                            <option value="">SELECT</option>
+                            <option value="Agent">REALTOR</option>
+                            <option value="Broker">BROKER</option>
+                        </select>
+                    </div>
+                    <div class="input-row">
+                        <label>Monthly Earnings [cite: 37, 79]</label>
+                        <select name="income" required>
+                            <option value="">SELECT [cite: 38, 80]</option>
+                            <option value="0-5k">$0 - $5K</option>
+                            <option value="15k+">$15K+</option>
+                        </select>
+                    </div>
+                    <button type="submit" id="submitBtn" class="btn-elite" style="width: 100%;">Submit For Approval [cite: 40, 81]</button>
                 </form>
             </div>
         </div>
@@ -185,9 +209,25 @@
 
     <footer>
         <div class="wrapper">
-            <p style="color: #444; font-size: 11px; font-weight: 800; letter-spacing: 3px;">CONTACT@MINDHACKING.SITE [cite: 41, 82]</p>
+            <p class="seo-list">
+                YouTube SEO for Realtors | Real Estate YouTube Expert | Rank Property Listing Videos | Local Real Estate SEO | YouTube Lead Generation for Agents
+            </p>
+            <p style="color: #444; font-size: 13px; font-weight: 900; letter-spacing: 5px;">CONTACT@MINDHACKING.SITE [cite: 41, 82]</p>
         </div>
     </footer>
 
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzG3tpCobPrk7Q4BxBOqsgmkU45TrHhbQoe-UBpK1u75BncwQ0UYO_HR9FiyJLFX-74/exec';
+        const form = document.getElementById('auditForm');
+        const btn = document.getElementById('submitBtn');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            btn.innerText = "PROCESSING..."; btn.disabled = true;
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(r => { alert('🔥 SUCCESS!'); form.reset(); btn.innerText = "Submit For Approval"; btn.disabled = false; })
+            .catch(e => { alert('ERROR.'); btn.disabled = false; });
+        });
+    </script>
 </body>
 </html>
